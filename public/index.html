@@ -18,39 +18,385 @@
   <!-- initialize the SDK after all desired features are loaded -->
   <script defer src="/__/firebase/init.js"></script>
 
-  <style media="screen">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <style>
+    /*  ============
+        global style
+        ============  */
+
     body {
       margin: 0;
-      padding: 0;
-      width: 100%;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0 auto;
-      font-family: sans-serif;
+      font-family: "Avenir Next LT Pro Regular", Arial, Helvetica, sans-serif;
+    }
+
+    a {
+      text-decoration: none;
       color: gray;
+    }
+
+    /*  ============
+        layout style
+        ============  */
+
+
+    /* header */
+    #header nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* footer */
+    #footer {
+      width: 94%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px 3% 24px;
+    }
+
+    .container {
+      margin: 0 auto;
+      max-width: 1200px;
+    }
+
+
+    /*  ============
+        custom style
+        ============  */
+
+    /* topnav */
+
+    .topnav {
+      overflow: hidden;
+      /* background-color: #333; */
+    }
+
+    .topnav a {
+      float: left;
+      display: block;
+      color: black;
+      /* color: #f2f2f2; */
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .topnav a:hover {
+      /* background-color: #ddd;
+      color: black; */
+    }
+
+    .topnav a.active {
+      /* background-color: #4CAF50;
+      color: white; */
+    }
+
+    .topnav .icon {
+      display: none;
+    }
+
+    #logo-site>img {
+      height: 64px;
+    }
+
+    /* social-media */
+
+    .social-media {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .social-media a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 4px;
+    }
+
+    .social-media a:first-child {
+      margin: 0 4px 0 0px;
+    }
+
+    .social-media a:last-child {
+      margin: 0 0px 0 4px;
+    }
+
+    .social-media a span::before {
+      display: block;
+      text-align: center;
+      width: 16px;
+      height: 16px;
+      padding: 8px;
+      color: white;
+      background-color: grey;
+      border-radius: 50%;
+    }
+
+
+    /* section */
+
+    section#opening {
+      padding: 50px 0 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    section#opening>* {
       text-align: center;
     }
 
-    h1 {
-      margin: 0;
-      padding: 0;
+    section#opening>h1 {
+      margin: 0 auto 30px;
+      font-size: 72pt;
+    }
+
+    section#group {
+      padding: 120px 0 50px;
+    }
+
+    section#action {
+      padding: 70px 0 160px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    section#action h3 {
+      text-align: center;
+      font-size: 48pt;
+      margin: 0 auto 18px;
+    }
+
+    .section-title>* {
+      text-align: center;
+      margin: 0 auto 50px;
+    }
+
+    /* grid */
+
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .grid>* {
+      width: 48%;
+      margin: 10px 1%;
+    }
+
+    .grid a img {
+      width: 100%;
+    }
+
+    /* flex */
+
+    .flex {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+    }
+
+    .flex>* {
+      width: 48%;
+      margin: 10px 1%;
+    }
+
+    .flex a img {
+      height: 100px;
+      width: auto;
+    }
+
+    /* RESPONSIVE */
+
+    @media screen and (max-width: 600px) {
+
+      /* header */
+
+      #header nav {
+        display: block;
+      }
+
+      /* footer */
+
+      #footer {
+        display: block;
+        text-align: center;
+      }
+
+      /* topnav */
+
+      /* .topnav a:not(:first-child) {
+        display: none;
+      } */
+
+      .topnav a:not([href="#home"]) {
+        display: none;
+      }
+
+      .topnav a.icon {
+        float: right;
+        display: block;
+        padding: 30px 24px;
+      }
+
+      .topnav a {
+        padding: 4px 6px;
+      }
+
+      /* section */
+
+      section#opening {
+        padding: 50px 24px 50px;
+      }
+
+      section#opening>h1 {
+        margin: 0 auto 20px;
+        font-size: 28pt;
+      }
+
+      section#action h3 {
+        font-size: 36pt;
+      }
+
+      /* grid */
+
+      .grid>* {
+        width: 98%;
+        margin: 6px 1%;
+      }
+
+      /* flex */
+
+      .flex {
+        flex-direction: column;
+      }
+
+      .flex>* {
+        width: 98%;
+      }
+      /* social-media */
+      .social-media {
+        margin: 32px auto;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+
+      .topnav.responsive {
+        position: relative;
+      }
+
+      .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+
+      .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+
+      .topnav.responsive .right a:not([class="icon"]) {
+        padding: 26px 0 15px 30px;
+      }
     }
   </style>
+
 </head>
 
 <body>
-  <div>
-    <!-- <h1>
-      mitayani
-    </h1> -->
-    <img src="./logo-heysaladin-black.png" alt="HeySaladin Logo" width="320px" >
-    <p>
-      We are a studio that provides UI Design services.
-    </p>
-    <button onclick="location.href='mailto:heysaladin@gmail.com';" style="margin: 24px auto 0; padding: 12px 18px; font-size: 16px; font-weight: bold; border: none; border-radius: 8px; color: #ffffff; background-image: linear-gradient(to bottom right, #f08d50, #df423c, #8a439d);">Contact us!</button>
+  <header id="header">
+    <nav class="topnav" id="myTopnav">
+      <div class="left">
+        <a href="#home" id="logo-site" class="active">
+          <img src="./logo-heysaladin-black.png" alt="Image Content - Logo -  Curiopavo">
+        </a>
+      </div>
+      <div class="right">
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section id="opening">
+      <h1>We are "Mitayani" creative team</h1>
+      <p>Omnivorous Creative Design. Graphic design, font, icon, illustration & template design (phisical or digital).
+      </p>
+    </section>
+    <section id="portfolio">
+      <div class="grid">
+        <a href="#">
+          <img src="./image-default-content.jpg" alt="Image Content -  Curiopavo">
+        </a>
+        <a href="#">
+          <img src="./image-default-content.jpg" alt="Image Content -  Curiopavo">
+        </a>
+        <a href="#">
+          <img src="./image-default-content.jpg" alt="Image Content -  Curiopavo">
+        </a>
+        <a href="#">
+          <img src="./image-default-content.jpg" alt="Image Content -  Curiopavo">
+        </a>
+      </div>
+    </section>
+    <section id="group">
+      <div class="section-title">
+        <h2>title</h2>
+        <div class="flex">
+          <a href="#">
+            <img src="./logo-mitayani-black.png" alt="Image Content - Logo -  Curiopavo">
+          </a>
+          <a href="#">
+            <img src="./lakoni-logo-color.png" alt="Image Content - Logo -  Curiopavo">
+          </a>
+          <a href="#">
+            <img src="./aksarasa-logo-black.png" alt="Image Content - Logo -  Curiopavo">
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="action">
+      <h3>Wanna work together?</h3>
+      <button onclick="location.href='mailto:heysaladin@gmail.com';"
+        style="margin:24px auto 0;border:none;color:#fff;background-image:linear-gradient(to bottom right, #f08d50, #df423c, #8a439d);height:50px;padding:16px 32px;font-family:Montserrat,sans-serif;font-weight:700;font-size:.688rem;line-height:18px;letter-spacing:1.54px;text-transform:uppercase;border-radius:25px;box-shadow:0 11px 36px 0 rgb(70 89 138 / 25%);">Contact
+        us!</button>
+    </section>
   </div>
+
+  <footer id="footer">
+    <p>© 2018 Mitayani Creative. All rights reserved.</p>
+    <div class="social-media">
+      <a href="#"><span class="fa fa-facebook"></span></a>
+      <a href="#"><span class="fa fa-twitter"></span></a>
+      <a href="#"><span class="fa fa-google"></span></a>
+    </div>
+  </footer>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
 </body>
 
 </html>
