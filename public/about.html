@@ -4,19 +4,30 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HeySaladin</title>
+  <title>About - HeySaladin</title>
+  <meta name="robots" content="index, follow">
+  <meta name="og:title" property="og:title" content="HeySaladin Design Studio">
+  <meta name="description" content="HeySaladin Design Studio">
   <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
   <link rel="icon" href="./favicon.ico" type="image/x-icon">
 
   <!-- update the version number as needed -->
-  <script defer src="/__/firebase/8.1.1/firebase-app.js"></script>
+  <script defer="" src="/__/firebase/8.2.4/firebase-app.js"></script>
   <!-- include only the Firebase features as you need -->
-  <script defer src="/__/firebase/8.1.1/firebase-auth.js"></script>
-  <script defer src="/__/firebase/8.1.1/firebase-database.js"></script>
-  <script defer src="/__/firebase/8.1.1/firebase-messaging.js"></script>
-  <script defer src="/__/firebase/8.1.1/firebase-storage.js"></script>
-  <!-- initialize the SDK after all desired features are loaded -->
-  <script defer src="/__/firebase/init.js"></script>
+  <script defer="" src="/__/firebase/8.2.4/firebase-auth.js"></script>
+  <script defer="" src="/__/firebase/8.2.4/firebase-database.js"></script>
+  <script defer="" src="/__/firebase/8.2.4/firebase-firestore.js"></script>
+  <script defer="" src="/__/firebase/8.2.4/firebase-functions.js"></script>
+  <script defer="" src="/__/firebase/8.2.4/firebase-messaging.js"></script>
+  <script defer="" src="/__/firebase/8.2.4/firebase-storage.js"></script>
+  <script defer="" src="/__/firebase/8.2.4/firebase-analytics.js"></script>
+  <script defer="" src="/__/firebase/8.2.4/firebase-remote-config.js"></script>
+  <script defer="" src="/__/firebase/8.2.4/firebase-performance.js"></script>
+  <!-- 
+    initialize the SDK after all desired features are loaded, set useEmulator to false
+    to avoid connecting the SDK to running emulators.
+  -->
+  <script defer="" src="/__/firebase/init.js?useEmulator=true"></script>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
@@ -28,23 +39,20 @@
     body {
       margin: 0;
       font-family: "Avenir Next LT Pro Regular", Arial, Helvetica, sans-serif;
-      color: white;
-      background-color: #262626;
     }
 
     a {
       text-decoration: none;
-      color: white;
+      color: gray;
     }
     
     p {
-      color: white;
+      color: #333333;
     }
 
     /*  ============
         layout style
         ============  */
-
 
     /* header */
     #header nav {
@@ -60,13 +68,14 @@
       justify-content: space-between;
       align-items: center;
       padding: 0px 3% 24px;
+      color: #666666;
+      font-size: 14px;
     }
 
     .container {
       margin: 0 auto;
       max-width: 1200px;
     }
-
 
     /*  ============
         custom style
@@ -82,7 +91,7 @@
     .topnav a {
       float: left;
       display: block;
-      color: #ffffff;
+      color: #666666;
       /* color: #f2f2f2; */
       text-align: center;
       padding: 14px 16px;
@@ -107,7 +116,7 @@
     }
 
     nav .right {
-      margin-right: 24px;
+      margin-right: 15px;
     }
 
     #logo-site>img {
@@ -143,7 +152,7 @@
       width: 16px;
       height: 16px;
       padding: 8px;
-      color: #262626;
+      color: white;
       background-color: #83afe3;
       border-radius: 50%;
     }
@@ -168,8 +177,12 @@
       font-size: 72pt;
     }
 
+    section#group {
+      padding: 120px 0 50px;
+    }
+
     section#action {
-      padding: 120px 0 160px;
+      padding: 70px 0 160px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -196,13 +209,72 @@
 
     .grid>* {
       width: 48%;
-      margin: 8px 1%;
+      margin: 10px 1%;
     }
 
     .grid a img {
       width: 100%;
-      border-radius: 6px;
-      border: solid 1px #444444;
+    }
+
+    /* flex */
+
+    .flex {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .flex>* {
+      width: 30%;
+      margin: 25px 1%;
+    }
+
+    .flex a img {
+      max-height: 100px;
+      max-width: 100%;
+      width: auto;
+    }
+
+    .team-card {
+      width: 30%;
+      margin: 25px 1%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: centar;
+    }
+
+    .team-card>* {
+      width: 100%;
+      display: block;
+    }
+
+    .team-photo {
+      width: 250px;
+      height: 250px;
+      margin: 10px 50px;
+      border-radius: 58px;
+      overflow: hidden;
+    }
+
+    .team-photo img {
+      width: 100%;
+      height: auto;
+    }
+
+    .team-name {
+      font-size: 21px;
+      color: #333333;
+      font-weight: bold;
+      margin: 10px auto;
+    }
+
+    .team-position {
+      font-size: 14px;
+      color: #999999;
     }
 
     /* RESPONSIVE */
@@ -268,6 +340,16 @@
         margin: 6px 1%;
       }
 
+      /* flex */
+
+      .flex {
+        flex-direction: column;
+      }
+
+      .flex>* {
+        width: 98%;
+      }
+
       /* social-media */
       .social-media {
         margin: 32px auto;
@@ -296,20 +378,99 @@
         padding: 26px 0 15px 30px;
       }
     }
+
+    .grid-wrapper {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      font-family: sans-serif;
+    }
+
+    .card {
+      margin: 5px 0.425%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: white;
+      -webkit-border-radius: 8px;
+      border-radius: 8px;
+      -webkit-box-shadow: 0 0 0 1px #e0e0e0 inset;
+      box-shadow: 0 0 0 1px #e0e0e0 inset;
+      font-size: 14px;
+      width: 300px;
+      min-height: 150px;
+    }
+
+    .card a {
+      display: inline-block;
+      position: relative;
+      cursor: pointer;
+      min-height: 36px;
+      min-width: 88px;
+      line-height: 36px;
+      vertical-align: middle;
+      -webkit-align-items: center;
+      align-items: center;
+      text-align: center;
+      -webkit-border-radius: 2px;
+      border-radius: 2px;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-user-select: none;
+      outline: none;
+      border: 0;
+      padding: 0 6px;
+      margin: 15px 8px 6px;
+      background: transparent;
+      color: currentColor;
+      white-space: nowrap;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 14px;
+      font-style: inherit;
+      font-variant: inherit;
+      font-family: inherit;
+      text-decoration: none;
+      overflow: hidden;
+      -webkit-transition: box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1),
+        background-color 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+      transition: box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1),
+        background-color 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+      padding-left: 16px;
+      padding-right: 16px;
+      border: 0;
+      -webkit-border-radius: 8px;
+      border-radius: 8px;
+      text-transform: none;
+      letter-spacing: 0.25px;
+      min-width: 60px;
+
+      background-color: #83afe3;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      color: #fff;
+    }
   </style>
 
 </head>
 
-<body>
+<body data-new-gr-c-s-check-loaded="14.995.0" data-gr-ext-installed="">
+
   <header id="header">
     <nav class="topnav" id="myTopnav">
       <div class="left">
-        <a href="#home" id="logo-site" class="active">
-          <img src="./hs-logo-white.png" alt="Image Content - Logo -  Curiopavo">
+        <a href="./index.html" id="logo-site" class="active">
+          <img src="./hs-logo-black.png" alt="Image Content - Logo -  HeySaladin">
         </a>
       </div>
       <div class="right">
-        <a href="./about.html">ABOUT</a>
+        <a href="./index.html">HOME</a>
         <a href="./contact.html">CONTACT</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
@@ -320,47 +481,40 @@
 
   <div class="container">
     <section id="opening">
-      <h2 style="margin-bottom: 50px;">
-        Hey, I am Saladin...
-      </h2>
-      <h1>i’m designing<br />solutions for human</h1>
-      <p>
-        I create solutions with user experience research, user interface design and frontend development skills.
+      <h1>About HeySaladin</h1>
+      <p>HeySaladin is the best design studio around the world.
       </p>
     </section>
-    <section id="portfolio">
-      <div class="grid">
-        <a href="#">
-          <img src="https://farooq-agent.web.app/assets/images/works/details/181-drawing-art-2018/kuririnaja.jpg"
-            alt="Mitayani - Delivery">
-        </a>
-        <a href="#">
-          <img src="https://farooq-agent.web.app/assets/images/works/details/254-kalaweit/kalaweit.jpg"
-            alt="Mitayani - Wild">
-        </a>
-        <a href="#">
-          <img src="https://farooq-agent.web.app/assets/images/works/details/253-nikahan/nikahan.jpg"
-            alt="Mitayani - Wedding">
-        </a>
-        <a href="#">
-          <img src="https://farooq-agent.web.app/assets/images/works/large/bumeja.jpg" alt="Mitayani - Baby">
-        </a>
+    <section id="group">
+      <div class="section-title">
+        <h2>TEAM</h2>
+        <div class="flex">
+
+          <div class="team-card">
+            <div class="team-photo">
+              <img src="./pp1.jpg" alt="Image Content - Logo - HeySaladin" />
+            </div>
+            <span class="team-name">Adin</span>
+            <span class="team-position">UI/UX Designer</span>
+          </div>
+
+        </div>
       </div>
     </section>
     <section id="action">
       <h3>Wanna work together?</h3>
-      <button onclick="location.href='mailto:heysaladin@gmail.com';"
+      <button onclick="location.href='./contact.html';"
         style="margin:24px auto 0;border:none;color:#fff;background-image:linear-gradient(135deg,#8254e5,#83afe3 150%);height:50px;padding:16px 32px;font-family:Montserrat,sans-serif;font-weight:700;font-size:.688rem;line-height:18px;letter-spacing:1.54px;text-transform:uppercase;border-radius:25px;box-shadow:0 11px 36px 0 rgb(70 89 138 / 25%);">Contact
         us!</button>
     </section>
   </div>
 
   <footer id="footer">
-    <p>© 2018 HeySaladin. All rights reserved.</p>
+    <p>© 2021 HeySaladin. All rights reserved.</p>
     <div class="social-media">
       <a href="https://www.instagram.com/lakoni.design/"><span class="fa fa-instagram"></span></a>
       <a href="https://dribbble.com/lakoni"><span class="fa fa-dribbble"></span></a>
-      <a href="https://curiopavo.web.app/"><span class="fa fa-snowflake-o"></span></a>
+      <a href="https://HeySaladin.web.app/"><span class="fa fa-snowflake-o"></span></a>
     </div>
   </footer>
 
@@ -374,6 +528,7 @@
       }
     }
   </script>
+
 </body>
 
 </html>
