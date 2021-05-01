@@ -28,17 +28,17 @@
     body {
       margin: 0;
       font-family: "Avenir Next LT Pro Regular", Arial, Helvetica, sans-serif;
-      color: white;
-      background-color: #262626;
+      color: #262626;
+      background-color: #ffffff;
     }
 
     a {
       text-decoration: none;
-      color: white;
+      color: #262626;
     }
 
     p {
-      color: white;
+      color: #262626;
     }
 
     img {
@@ -87,7 +87,7 @@
     .topnav a {
       float: left;
       display: block;
-      color: #ffffff;
+      color: #262626;
       /* color: #f2f2f2; */
       text-align: center;
       padding: 14px 16px;
@@ -192,6 +192,28 @@
       margin: 0 auto 50px;
     }
 
+    /* ----- */
+    #i-do .card .icon {
+      width: 100px;
+      height: 100px;
+      display: block;
+      border-radius: 32px;
+    }
+
+    #icon-1 {
+      background: url('./icon-ux.png') #246BFD no-repeat center center;
+    }
+
+    #icon-2 {
+      background: url('./icon-ui.png') #246BFD no-repeat center center;
+    }
+
+    #icon-3 {
+      background: url('./icon-uix.png') #246BFD no-repeat center center;
+    }
+
+    /* ----- */
+
     /* grid */
 
     .grid {
@@ -206,8 +228,8 @@
 
     .grid a img {
       width: 100%;
-      border-radius: 6px;
-      border: solid 1px #444444;
+      border-radius: 24px;
+      border: solid 1px #E9E9E9;
     }
 
     /* RESPONSIVE */
@@ -310,12 +332,15 @@
     <nav class="topnav" id="myTopnav">
       <div class="left">
         <a href="#home" id="logo-site" class="active">
-          <img src="./hs-logo-white.png" alt="Image Content - Logo -  Curiopavo">
+          <img src="./hs-logo-black.png" alt="Image Content - Logo -  Curiopavo">
         </a>
+        <a href="./Home.html">Home</a>
+        <a href="./About.html">About</a>
+        <a href="./Portfolio.html">Portfolio</a>
+        <a href="./Services.html">Services</a>
       </div>
       <div class="right">
-        <a href="./about.html">ABOUT</a>
-        <a href="./contact.html">CONTACT</a>
+        <a href="./contact.html">Let’s talk!</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
         </a>
@@ -325,15 +350,81 @@
 
   <div class="container">
     <section id="opening">
-      <h2 style="margin-bottom: 50px;">
-        Hey, I am Saladin...
-      </h2>
-      <h1>i’m designing<br />solutions for human</h1>
-      <p>
-        I create solutions with user experience research, user interface design and frontend development skills.
-      </p>
+      <div class="text">
+        <h2 style="margin-bottom: 50px;">
+          Hey, I’m Saladin
+        </h2>
+        <h1>A Passionate Digital Product Designer.</h1>
+        <p>
+          I design digital products by understanding the problem and finding the right solution using multidisciplinary
+          knowledge such as research, visual design, good interaction, and also supported by a little coding & business
+          knowledge.
+        </p>
+        <div class="row">
+          <a href="./about.html">Explore more</a>
+          <a href="./about.html">Watch Video</a>
+        </div>
+      </div>
+      <div class="hero">
+        <img src="./hero-image.png" alt="Adin">
+      </div>
+    </section>
+    <section id="i-do-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Solving Problem
+            <br />Creatively</h2>
+        </div>
+        <div id="i-do">
+          <div class="card card-col-3">
+            <div class="icon" id="icon-1"></div>
+            <h3>User Experience</h3>
+            <p>
+              Conduct research to understand a problem, define what can be done & solutions to solve the problem.
+            </p>
+          </div>
+          <div class="card card-col-3">
+            <div class="icon" id="icon-2"></div>
+            <h3>User Interface</h3>
+            <p>
+              The form of a prototype of a product to be able to solve a problem while still being easy to use by the
+              user.
+            </p>
+          </div>
+          <div class="card card-col-3">
+            <div class="icon" id="icon-3"></div>
+            <h3>User Interaction</h3>
+            <p>
+              Creating a user interaction in the form of a prototype of a product to be able to solve a problem.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="workflow">
+      <div class="flow">
+        <img src="./figure-flow.png" alt="Adin">
+      </div>
+      <div class="text">
+        <div class="section-title">
+          <h2>My Passionate
+            <br />Creative Work Flow</h2>
+        </div>
+        <p>
+          In working on a case, I usually use the Human Centered Design approach by understanding what happened, finding
+          the real problem, trying to solve the problem with creative ideas, making a prototype of the idea and of
+          course testing the idea to the user whether the idea is true. what I submitted was able to solve the problem.
+        </p>
+        <p>
+          Discover, Define, Ideate, Prototype, Validate
+        </p>
+        <a href="./about.html">More about services</a>
+      </div>
     </section>
     <section id="portfolio">
+      <div class="section-title">
+        <h2>My Works</h2>
+      </div>
       <div class="grid">
         <a href="#">
           <img src="https://farooq-agent.web.app/assets/images/works/details/181-drawing-art-2018/kuririnaja.jpg"
@@ -352,21 +443,95 @@
         </a>
       </div>
     </section>
+    <section id="about">
+      <div class="flow">
+        <img src="./figure.png" alt="Adin">
+      </div>
+      <div class="text">
+        <div class="section-title">
+          <h2>About me</h2>
+        </div>
+        <p>
+          Hello, my name is Muhammad Sholahuddin (Saladin) who lives in Blitar, Indonesia. I am researching, designing,
+          & developing digital products.
+        </p>
+        <p>
+          I like to draw from a young age, when I was in high school I began to know art, music and theater. All of that
+          made me have a sense of art in me and this really helped me in designing a balance between the value of
+          usability and aesthetics.
+        </p>
+        <a href="./about.html">More about me</a>
+      </div>
+    </section>
+    <section id="group">
+      <div class="section-title">
+        <h2>PARTNERS</h2>
+        <div class="flex">
+          <a href="./mitayani/index.html">
+            <img src="./logo-client-1.png" alt="Image Content - Logo -  hyperspace">
+          </a>
+          <a href="./lakoni/index.html">
+            <img src="./logo-client-2.png" style="width: 58%;" alt="Image Content - Logo -  hyperspace">
+          </a>
+          <a href="./aksarasa/index.html">
+            <img src="./logo-client-3.png" alt="Image Content - Logo -  hyperspace">
+          </a>
+          <a href="https://zopavo.web.app/">
+            <img src="./logo-client-4.png" alt="Image Content - Logo -  hyperspace">
+          </a>
+          <a href="./thinksoft/index.html">
+            <img src="./logo-client-5.png" style="width: 58%;" alt="Image Content - Logo -  hyperspace">
+          </a>
+          <a href="./lokajaya/index.html">
+            <img src="./logo-client-6.png" style="width: 58%;" alt="Image Content - Logo -  hyperspace">
+          </a>
+          <a href="./lokajaya/index.html">
+            <img src="./logo-client-7.png" style="width: 58%;" alt="Image Content - Logo -  hyperspace">
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="portfolio">
+      <div class="section-title">
+        <h2>Testimonials</h2>
+      </div>
+      <div class="flow">
+        <img src="./image-testimonial.jpg" alt="Adin">
+      </div>
+      <div class="text">
+        <p>
+          Adin is a motivated, forward thinking and also intelligent UI Designer with lots of knowledge in his field.
+          Proactive, energetic and totally organized.
+        </p>
+        <p>
+          Brilliant UI Designer. Didien is extremely enthusiastic about his work which is infectious. Give him the
+          really challenging tasks, the ones that everyone else is struggling with, and he will get them done.
+          <br /><br />
+          Adin always maintains very good relation with co-workers and clients. He learns quickly and I would have no
+          hesitation in working with Didien once again in the future.
+        </p>
+        <span>Anna Jihad F.</span>
+        <span>Project manager at FXmedia & Founder Oartscience studio</span>
+      </div>
+    </section>
     <section id="action">
-      <h3>Wanna work together?</h3>
+      <h3>Have any project in mind?</h3>
       <button onclick="location.href='mailto:heysaladin@gmail.com';"
-        style="margin:24px auto 0;border:none;color:#fff;background-image:linear-gradient(135deg,#8254e5,#83afe3 150%);height:50px;padding:16px 32px;font-family:Montserrat,sans-serif;font-weight:700;font-size:.688rem;line-height:18px;letter-spacing:1.54px;text-transform:uppercase;border-radius:25px;box-shadow:0 11px 36px 0 rgb(70 89 138 / 25%);">Contact
-        us!</button>
+        style="margin:24px auto 0;border:none;color:#fff;background-image:linear-gradient(135deg,#8254e5,#83afe3 150%);height:50px;padding:16px 32px;font-family:Montserrat,sans-serif;font-weight:700;font-size:.688rem;line-height:18px;letter-spacing:1.54px;text-transform:uppercase;border-radius:25px;box-shadow:0 11px 36px 0 rgb(70 89 138 / 25%);">Let’s
+        talk!</button>
     </section>
   </div>
 
   <footer id="footer">
-    <p>© 2018 HeySaladin. All rights reserved.</p>
-    <div class="social-media">
+    <p>© 2021 — Design & Develop by Muhammad Sholahuddin</p>
+    <div class="right">
+      <span>Thanks for scolling.</span>
+    </div>
+    <!-- <div class="social-media">
       <a href="https://www.instagram.com/heysaladin.design/"><span class="fa fa-instagram"></span></a>
       <a href="https://dribbble.com/heysaladin"><span class="fa fa-dribbble"></span></a>
       <a href="https://hyperspacecreative.web.app/"><span class="fa fa-snowflake-o"></span></a>
-    </div>
+    </div> -->
   </footer>
 
   <script>
