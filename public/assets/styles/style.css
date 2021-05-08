@@ -203,6 +203,7 @@ section#opening > h1 {
 }
 
 #opening .text {
+  /* padding-left: 32px; */
   text-align: left;
 }
 
@@ -240,6 +241,59 @@ color: #7D3CFC;
   width: 94%;
 }
 
+#opening .text > .row {
+  margin-top: 50px;
+  display: flex; 
+}
+
+#opening .text .row a.primary {
+  background: #246BFD;
+  border-radius: 12px;
+  padding: 14px 24px;
+  font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+
+/* identical to box height */
+text-align: center;
+
+color: #FFFFFF;
+
+
+}
+
+#opening .text .row .video-link {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  /* line-height: 22px; */
+  
+  /* identical to box height */
+  
+  color: #412381;
+  
+margin-left: 50px;
+display: flex;
+/* justify-content: center; */
+align-items: center;
+}
+
+#opening .text .row .video-link span.icon#icon-play {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #C2ADEF;
+  display: inline-block;
+  margin-right: 10px;
+  background: url('./images/play-icon.png') no-repeat center center;
+}
+#opening .hero img {
+  margin-right: -12px;
+}
+
 section#action {
   padding: 120px 0 160px;
   display: flex;
@@ -255,11 +309,36 @@ section#action h3 {
 }
 
 .section-title > * {
-  text-align: center;
+  text-align: left;
   margin: 0 auto 50px;
 }
 
 /* ----- */
+#i-do-section .section-title {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 60px;
+  
+  color: #0A264B;
+}
+#i-do-section .section-title .point{
+  color: #246BFD;
+}
+#i-do {
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+#i-do .card {
+  width: 30%;
+}
+
+
 #i-do .card .icon {
   width: 100px;
   height: 100px;
@@ -269,14 +348,44 @@ section#action h3 {
 
 #icon-1 {
   background: url("./images/icon-ux.png") #246bfd no-repeat center center;
+  box-shadow: 0px 20px 40px rgba(36, 107, 253, 0.25);
 }
 
 #icon-2 {
-  background: url("./images/icon-ui.png") #246bfd no-repeat center center;
+  background: url("./images/icon-ui.png") #4B3CFC no-repeat center center;
+  box-shadow: 0px 20px 40px rgba(75, 60, 252, 0.25);
 }
 
 #icon-3 {
-  background: url("./images/icon-uix.png") #246bfd no-repeat center center;
+  background: url("./images/icon-uix.png") #7D3CFC no-repeat center center;
+  box-shadow: 0px 20px 40px rgba(125, 60, 252, 0.25);
+}
+
+#i-do .card h3 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 39px;
+  
+  /* identical to box height */
+  
+  color: #0A264B;
+  margin: 50px 0 0;
+}
+
+#i-do .card p {
+  font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 24px;
+
+/* or 171% */
+
+color: #727272;
+
+
 }
 
 /* ----- */
