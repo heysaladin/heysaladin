@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HeySaladin</title>
+  <link rel="shortcut icon" href="./assets/styles/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./assets/styles/images/favicon.ico" type="image/x-icon">
+
+  <!-- update the version number as needed -->
+  <script defer src="/__/firebase/8.1.1/firebase-app.js"></script>
+  <!-- include only the Firebase features as you need -->
+  <script defer src="/__/firebase/8.1.1/firebase-auth.js"></script>
+  <script defer src="/__/firebase/8.1.1/firebase-database.js"></script>
+  <script defer src="/__/firebase/8.1.1/firebase-messaging.js"></script>
+  <script defer src="/__/firebase/8.1.1/firebase-storage.js"></script>
+  <!-- initialize the SDK after all desired features are loaded -->
+  <script defer src="/__/firebase/init.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="./assets/styles/style.css" />
+
+</head>
+
+<body>
+  <header id="header">
+    <nav class="topnav" id="myTopnav">
+      <div class="left">
+        <a href="#home" id="logo-site">
+          <img src="./assets/styles/images/hs-logo-black.png" alt="Image Content - Logo -  Curiopavo">
+        </a>
+        <a href="./assets/styles/images/Home.html" class="active">Home</a>
+        <a href="./assets/styles/images/About.html">About</a>
+        <a href="./assets/styles/images/Portfolio.html">Portfolio</a>
+        <a href="./assets/styles/images/Services.html">Services</a>
+      </div>
+      <div class="right">
+        <a href="./assets/styles/images/contact.html" id="main-cta">Let’s talk!</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section id="opening">
+      <div class="text">
+        <h2>
+          Hey, I’m Saladin
+        </h2>
+        <h1>A Passionate Digital Product <span class="point">Designer.</span></h1>
+        <p>
+          I design digital products by understanding the problem and finding the right solution using multidisciplinary
+          knowledge such as research, visual design, good interaction, and also supported by a little coding & business
+          knowledge.
+        </p>
+        <div class="row">
+          <a href="./assets/styles/images/about.html" class="primary">Explore more</a>
+          <a href="./assets/styles/images/about.html" class="video-link"><span class="icon" id="icon-play"></span><span>Watch Video</span></a>
+        </div>
+      </div>
+      <div class="hero">
+        <img src="./assets/styles/images/hero-image.png" alt="Adin">
+      </div>
+    </section>
+    <section id="i-do-section">
+      <div class="container">
+        <div class="section-title left">
+          <h2>Solving Problem
+            <br /><span class="point">Creatively</span></h2>
+        </div>
+        <div id="i-do">
+          <div class="card card-col-3">
+            <div class="icon" id="icon-1"></div>
+            <h3>User Experience</h3>
+            <p>
+              Conduct research to understand a problem, define what can be done & solutions to solve the problem.
+            </p>
+          </div>
+          <div class="card card-col-3">
+            <div class="icon" id="icon-2"></div>
+            <h3>User Interface</h3>
+            <p>
+              The form of a prototype of a product to be able to solve a problem while still being easy to use by the
+              user.
+            </p>
+          </div>
+          <div class="card card-col-3">
+            <div class="icon" id="icon-3"></div>
+            <h3>User Interaction</h3>
+            <p>
+              Creating a user interaction in the form of a prototype of a product to be able to solve a problem.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="workflow">
+      <div class="flow">
+        <img src="./assets/styles/images/figure-flow.png" alt="Adin">
+      </div>
+      <div class="text">
+        <div class="section-title">
+          <h2>My Passionate
+            <br />Creative Work Flow</h2>
+        </div>
+        <p>
+          In working on a case, I usually use the Human Centered Design approach by understanding what happened, finding
+          the real problem, trying to solve the problem with creative ideas, making a prototype of the idea and of
+          course testing the idea to the user whether the idea is true. what I submitted was able to solve the problem.
+        </p>
+        <p>
+          Discover, Define, Ideate, Prototype, Validate
+        </p>
+        <a href="./assets/styles/images/about.html">More about services</a>
+      </div>
+    </section>
+    <section id="portfolio">
+      <div class="section-title">
+        <h2>My Works</h2>
+      </div>
+      <div class="grid">
+        <a href="#">
+          <img src="https://farooq-agent.web.app/assets/images/works/details/181-drawing-art-2018/kuririnaja.jpg"
+            alt="Mitayani - Delivery">
+        </a>
+        <a href="#">
+          <img src="https://farooq-agent.web.app/assets/images/works/details/254-kalaweit/kalaweit.jpg"
+            alt="Mitayani - Wild">
+        </a>
+        <a href="#">
+          <img src="https://farooq-agent.web.app/assets/images/works/details/253-nikahan/nikahan.jpg"
+            alt="Mitayani - Wedding">
+        </a>
+        <a href="#">
+          <img src="https://farooq-agent.web.app/assets/images/works/large/bumeja.jpg" alt="Mitayani - Baby">
+        </a>
+      </div>
+    </section>
+    <section id="about">
+      <div class="flow">
+        <img src="./assets/styles/images/figure.png" alt="Adin">
+      </div>
+      <div class="text">
+        <div class="section-title">
+          <h2>About me</h2>
+        </div>
+        <p>
+          Hello, my name is Muhammad Sholahuddin (Saladin) who lives in Blitar, Indonesia. I am researching, designing,
+          & developing digital products.
+        </p>
+        <p>
+          I like to draw from a young age, when I was in high school I began to know art, music and theater. All of that
+          made me have a sense of art in me and this really helped me in designing a balance between the value of
+          usability and aesthetics.
+        </p>
+        <a href="./assets/styles/images/about.html">More about me</a>
+      </div>
+    </section>
+    <section id="group">
+      <div class="section-title">
+        <h2>PARTNERS</h2>
+        <div class="flex">
+          <a href="./assets/styles/images/mitayani/index.html">
+            <img src="./img/logo-client-1.png" alt="Image Content - Logo -  hyperspace">
+          </a>
+          <a href="./assets/styles/images/lakoni/index.html">
+            <img src="./img/logo-client-2.png" style="width: 58%;" alt="Image Content - Logo -  hyperspace">
+          </a>
+          <a href="./assets/styles/images/aksarasa/index.html">
+            <img src="./img/logo-client-3.png" alt="Image Content - Logo -  hyperspace">
+          </a>
+          <a href="https://zopavo.web.app/">
+            <img src="./img/logo-client-4.png" alt="Image Content - Logo -  hyperspace">
+          </a>
+          <a href="./assets/styles/images/thinksoft/index.html">
+            <img src="./img/logo-client-5.png" style="width: 58%;" alt="Image Content - Logo -  hyperspace">
+          </a>
+          <a href="./assets/styles/images/lokajaya/index.html">
+            <img src="./img/logo-client-6.png" style="width: 58%;" alt="Image Content - Logo -  hyperspace">
+          </a>
+          <a href="./assets/styles/images/lokajaya/index.html">
+            <img src="./img/logo-client-7.png" style="width: 58%;" alt="Image Content - Logo -  hyperspace">
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="portfolio">
+      <div class="section-title">
+        <h2>Testimonials</h2>
+      </div>
+      <div class="flow">
+        <img src="./img/image-testimonial.jpg" alt="Adin">
+      </div>
+      <div class="text">
+        <p>
+          Adin is a motivated, forward thinking and also intelligent UI Designer with lots of knowledge in his field.
+          Proactive, energetic and totally organized.
+        </p>
+        <p>
+          Brilliant UI Designer. Didien is extremely enthusiastic about his work which is infectious. Give him the
+          really challenging tasks, the ones that everyone else is struggling with, and he will get them done.
+          <br /><br />
+          Adin always maintains very good relation with co-workers and clients. He learns quickly and I would have no
+          hesitation in working with Didien once again in the future.
+        </p>
+        <span>Anna Jihad F.</span>
+        <span>Project manager at FXmedia & Founder Oartscience studio</span>
+      </div>
+    </section>
+    <section id="action">
+      <h3>Have any project in mind?</h3>
+      <button onclick="location.href='mailto:heysaladin@gmail.com';"
+        style="margin:24px auto 0;border:none;color:#fff;background-image:linear-gradient(135deg,#8254e5,#83afe3 150%);height:50px;padding:16px 32px;font-family:Montserrat,sans-serif;font-weight:700;font-size:.688rem;line-height:18px;letter-spacing:1.54px;text-transform:uppercase;border-radius:25px;box-shadow:0 11px 36px 0 rgb(70 89 138 / 25%);">Let’s
+        talk!</button>
+    </section>
+  </div>
+
+  <footer id="footer">
+    <p>© 2021 — Design & Develop by Muhammad Sholahuddin</p>
+    <div class="right">
+      <span>Thanks for scolling.</span>
+    </div>
+    <!-- <div class="social-media">
+      <a href="https://www.instagram.com/heysaladin.design/"><span class="fa fa-instagram"></span></a>
+      <a href="https://dribbble.com/heysaladin"><span class="fa fa-dribbble"></span></a>
+      <a href="https://hyperspacecreative.web.app/"><span class="fa fa-snowflake-o"></span></a>
+    </div> -->
+  </footer>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+</body>
+
+</html>
