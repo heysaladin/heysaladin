@@ -1,5 +1,104 @@
+.button-primary {
+  background: #246bfd;
+  border-radius: 12px;
+  padding: 14px 24px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+
+  /* identical to box height */
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.button-primary:hover {
+  color: #ffffff;
+}
+
+.button-secondary {
+  padding: 14px 24px;
+  background: #f3edff;
+  border-radius: 12px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #7d3cfc;
+}
+
+.button-secondary:hover {
+  color: #7d3cfc;
+}
+
+#logo {
+  margin-right: 10px;
+}
+
+.nav-item {
+  margin: 0 10px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #6e7fa2;
+}
+
+.nav-item.active {
+  position: relative;
+  color: #7d3cfc;
+}
+
+.nav-item.active:after {
+  content: "\00B7";
+  font-size: 24px;
+  display: inline-block;
+  position: absolute;
+  bottom: -0.55em;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  color: #df23fe;
+}
+
 /* HEADER start */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* ---------- */
+
+.video-link {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  /* line-height: 22px; */
+  
+  /* identical to box height */
+  
+  color: #412381;
+  
+margin-left: 20px;
+display: flex;
+/* justify-content: center; */
+align-items: center;
+}
+
+.video-link span.icon#icon-play {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #C2ADEF;
+  display: inline-block;
+  margin-right: 10px;
+  background: url('./images/play-icon.png') no-repeat center center;
+}
+
+/* ---------- */
 
 .header-2-1 .modal-item.modal {
   top: 2rem;
@@ -8,6 +107,46 @@
 .header-2-1 .navbar,
 .header-2-1 .hero {
   padding: 3rem 2rem;
+}
+
+#hero-text .text-caption {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 31px;
+  color: #0a264b;
+  margin: 0 0 28px;
+}
+
+#hero-text h1 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3.75rem;
+  line-height: 1.2em;
+  color: #0a264b;
+  margin: 0 0 40px;
+}
+
+#hero-text h1 span.point {
+  color: #7d3cfc;
+}
+
+#hero-text p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #727272;
+  width: 94%;
+  margin-bottom: 40px;
+}
+
+#hero-image img {
+  width: 125%;
+  margin: -6% -10% 0 0;
 }
 
 .header-2-1 .navbar-light .navbar-nav .nav-link {
@@ -227,8 +366,20 @@
 
 /* ---------- */
 
-#section-i-do .title-text {
+#section-i-do .section-title {
   padding: 0rem 6rem 0rem;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 1.3em;
+
+  color: #0a264b;
+}
+
+#section-i-do .section-title .point {
+  color: #246bfd;
 }
 
 .content-2-1 .icon {
@@ -304,12 +455,37 @@
   color: #565656;
 }
 
+/* ---------- */
+
+.content-2-1 .icon-title {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 39px;
+  color: #0a264b;
+}
+
+.content-2-1 .icon-caption {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+
+  /* or 171% */
+
+  color: #727272;
+}
+
+/* ---------- */
+
 .content-2-1 .card-block {
   padding: 1rem 1rem 5rem;
 }
 
 .content-2-1 .card {
-  padding: 24px 0 0 64px;
+  padding: 24px 0 0 72px;
   background: #246bfd url("./images/bg-mask.png") no-repeat center center;
   background-size: cover;
   border-radius: 36px;
@@ -434,6 +610,22 @@
 
 /* FOOTER start */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* ---------- */
+
+#text-bottom {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+
+  /* or 171% */
+
+  color: #727272;
+}
+
+/* ---------- */
 
 .footer-2-1 .list-space {
   margin-bottom: 1.25rem;

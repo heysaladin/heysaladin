@@ -14,8 +14,8 @@
   <section class="h-100 w-100 bg-white" style="box-sizing: border-box; ">
     <div class="container-xxl mx-auto p-0  position-relative header-2-1" style="font-family: 'Poppins', sans-serif">
       <nav class="navbar navbar-expand-lg navbar-light">
-        <a href="#">
-          <img style="margin-right: 0.75rem; height: 40px;" src="./assets/styles/images/hs-logo-black.png" alt="" />
+        <a href="#" id="logo">
+          <img style="margin-right: 0.75rem; height: 40px;" src="./assets/styles/images/hs-logo-black.png" alt="HeySaladin Logo" width="132" height="40" />
         </a>
         <button class="navbar-toggler border-0" type="button" data-bs-toggle="modal" data-bs-target="#targetModal-item">
           <span class="navbar-toggler-icon"></span>
@@ -28,7 +28,7 @@
               <div class="modal-header border-0" style="padding: 2rem; padding-bottom: 0">
                 <a class="modal-title" id="targetModalLabel">
                   <img style="margin-top: 0.5rem; height: 40px;" src="./assets/styles/images/hs-logo-black.png"
-                    alt="" />
+                    alt="HeySaladin Logo" width="132" height="40" />
                 </a>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
@@ -52,7 +52,7 @@
                 <!-- <button class="btn btn-default btn-no-fill">
                   Log In
                 </button> -->
-                <button class="btn btn-fill text-white">Let’s talk!</button>
+                <button class="btn button-secondary">Let’s talk!</button>
               </div>
             </div>
           </div>
@@ -77,7 +77,7 @@
             <!-- <button class="btn btn-default btn-no-fill">
               Log In
             </button> -->
-            <button class="btn btn-fill text-white">Let’s talk!</button>
+            <button class="btn button-secondary">Let’s talk!</button>
           </div>
         </div>
       </nav>
@@ -86,9 +86,10 @@
         <div class="mx-auto d-flex flex-lg-row flex-column hero">
           <!-- Left Column -->
           <div
-            class="left-column d-flex flex-lg-grow-1 flex-column align-items-lg-start text-lg-start align-items-center text-center">
+            class="left-column d-flex flex-lg-grow-1 flex-column align-items-lg-start text-lg-start align-items-center text-center" id="hero-text">
             <p class="text-caption">Hey, I’m Saladin</p>
-            <h1 class="title-text-big">
+            <h1 class="">
+              <!-- title-text-big -->
               <!-- <br class="d-lg-block d-none" /> -->
               A Passionate Digital Product <span class="point">Designer.</span>
             </h1>
@@ -100,25 +101,19 @@
               knowledge.
             </p>
             <div class="d-flex flex-sm-row flex-column align-items-center mx-lg-0 mx-auto justify-content-center gap-3">
-              <button class="btn d-inline-flex mb-md-0 btn-try text-white">
+              <button class="btn d-inline-flex mb-md-0 button-primary">
                 Explore more
               </button>
-              <button class="btn btn-outline">
-                <div class="d-flex align-items-center">
-                  <svg class="me-2" width="13" height="12" viewBox="0 0 13 13" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10.9293 7.99988L6.66668 5.15788V10.8419L10.9293 7.99988ZM12.9173 8.27722L5.85134 12.9879C5.80115 13.0213 5.74283 13.0404 5.6826 13.0433C5.62238 13.0462 5.5625 13.0327 5.50934 13.0042C5.45619 12.9758 5.41175 12.9334 5.38075 12.8817C5.34976 12.83 5.33337 12.7708 5.33334 12.7105V3.28922C5.33337 3.22892 5.34976 3.16976 5.38075 3.11804C5.41175 3.06633 5.45619 3.02398 5.50934 2.99552C5.5625 2.96706 5.62238 2.95355 5.6826 2.95644C5.74283 2.95932 5.80115 2.97848 5.85134 3.01188L12.9173 7.72255C12.963 7.75299 13.0004 7.79423 13.0263 7.84261C13.0522 7.89099 13.0658 7.94501 13.0658 7.99988C13.0658 8.05475 13.0522 8.10878 13.0263 8.15716C13.0004 8.20553 12.963 8.24678 12.9173 8.27722Z"
-                      fill="#555B61" />
-                  </svg>
-                  Watch the video
+              <button class="btn">
+                <div class="d-flex align-items-center video-link">
+                  <span class="icon" id="icon-play"></span><span>Watch Video</span>
                 </div>
               </button>
             </div>
           </div>
           <!-- Right Column -->
-          <div class="right-column text-center d-flex justify-content-center pe-0">
-            <img id="img-fluid" class="h-auto mw-100" src="./assets/styles/images/hero-image.png" alt="" />
+          <div class="right-column text-center d-flex justify-content-center pe-0" id="hero-image">
+            <img id="img-fluid" class="h-auto" src="./assets/styles/images/hero-image.png" alt="HeySaladin" width="636" height="695.5" />
           </div>
         </div>
       </div>
@@ -129,7 +124,7 @@
       <!-- <div
             class="left-column d-flex flex-lg-grow-1 flex-column align-items-lg-start text-lg-start align-items-center text-center"> -->
       <div class="text-left title-text">
-        <h1 class="text-title">Solving Problem
+        <h1 class="text-title section-title">Solving Problem
           <br /><span class="point">Creatively</span></h1>
         <!-- <p class="text-caption" style="margin-left: 3rem; margin-right: 3rem">
           You can easily manage your business with a powerful tools
@@ -140,7 +135,7 @@
         <div class="row" id="i-do">
           <div class="col-lg-4 column">
             <div class="icon">
-              <img src="./assets/styles/images/icon-ux.png" alt="" />
+              <img src="./assets/styles/images/icon-ux.png" alt="icon UX" width="42" height="42" />
             </div>
             <h3 class="icon-title">User Experience</h3>
             <p class="icon-caption">
@@ -149,7 +144,7 @@
           </div>
           <div class="col-lg-4 column">
             <div class="icon">
-              <img src="./assets/styles/images/icon-ui.png" alt="" />
+              <img src="./assets/styles/images/icon-ui.png" alt="icon UI" width="38" height="46" />
             </div>
             <h3 class="icon-title">User Interface</h3>
             <p class="icon-caption">
@@ -159,7 +154,7 @@
           </div>
           <div class="col-lg-4 column">
             <div class="icon">
-              <img src="./assets/styles/images/icon-uix.png" alt="" />
+              <img src="./assets/styles/images/icon-uix.png" alt="icon UIx" width="41" height="47" />
             </div>
             <h3 class="icon-title">User Interaction</h3>
             <p class="icon-caption">
@@ -188,7 +183,7 @@
               <button class="btn btn-outline">Demo Version</button>
             </div> -->
             <div class="me-lg-3">
-              <img src="./assets/styles/images/cards.png" alt="" />
+              <img src="./assets/styles/images/cards.png" alt="Cards" width="333" height="299" />
             </div>
           </div>
         </div>
@@ -203,9 +198,9 @@
             <div class="">
               <div class="list-space">
                 <img style="margin-right: 0.75rem; height: 40px;" src="./assets/styles/images/logo-black-all.png"
-                  alt="" />
+                  alt="HeySaladin Logo" width="127.5" height="40" />
               </div>
-              <p>I am researching, designing, & developing products.</p>
+              <p id="text-bottom">I am researching, designing, <br/>& developing products.</p>
               <!-- <nav class="list-unstyled">
 								<li class="list-space">
 									<a href="" class="list-menu">Home</a>
