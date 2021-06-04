@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html, body {
+font-family: 'Poppins', sans-serif;
+}
+
 .button-primary {
   background: #246bfd;
   border-radius: 12px;
