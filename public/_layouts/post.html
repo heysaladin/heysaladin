@@ -1,0 +1,22 @@
+---
+layout: "wrapper"
+author: "Adin"
+---
+
+<!-- {% if page.title == "My First Post" %} => and condition, or condition
+    This is the first post
+{% elsif page.title == "My Second Post" %}
+    This is the second post
+{% else %}
+    This is another post
+{% endif %} -->
+
+{% for post in site.posts %}
+    <li><a style="{% if page.url == post.url %}color: red;{% endif %}" href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+
+<h1>{{ page.title }}</h1>
+<h3>{{ page.author }}</h3>
+<hr>
+
+{{ content }}

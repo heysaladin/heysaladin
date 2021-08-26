@@ -1,0 +1,92 @@
+<!-- <h1 style='color: {{ include.color }};'>{{ site.title }}</h1>
+<hr> -->
+
+<section class="h-100 w-100 bg-white" style="box-sizing: border-box; ">
+    <div class="container-xxl mx-auto p-0  position-relative header-2-1" style="font-family: 'Poppins', sans-serif">
+
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a href="#" id="logo">
+        <img style="margin-right: 0.75rem; height: 40px;" src="./assets/styles/images/hs-logo-black.png"
+            alt="HeySaladin Logo" width="132" height="40" />
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="modal"
+        data-bs-target="#targetModal-item">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="modal-item modal fade" id="targetModal-item" tabindex="-1" role="dialog"
+        aria-labelledby="targetModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content bg-white border-0">
+                <div class="modal-header border-0" style="padding: 2rem; padding-bottom: 0">
+                    <a class="modal-title" id="targetModalLabel">
+                        <img style="margin-top: 0.5rem; height: 40px;"
+                            src="./assets/styles/images/hs-logo-black.png" alt="HeySaladin Logo" width="132"
+                            height="40" />
+                    </a>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="padding: 2rem; padding-top: 0; padding-bottom: 0">
+                    <ul class="navbar-nav responsive me-auto mt-2 mt-lg-0">
+                        <!-- <li class="nav-item {{ if "home" == page.url }}active{{ endif }}">
+                            <a class="nav-link" href="{{ home }}">Homex</a>
+                        </li>
+                        <li class="nav-item {{ if "about" == page.url }}active{{ endif }}">
+                            <a class="nav-link" href="{{ about }}">About</a>
+                        </li>
+                        <li class="nav-item {{ if "portfolio" == page.url }}active{{ endif }}">
+                            <a class="nav-link" href="{{ portfolio }}">Portfolio</a>
+                        </li>
+                        <li class="nav-item {{ if "blog" == page.url }}active{{ endif }}">
+                            <a class="nav-link" href="{{ blog }}">Blog</a>
+                        </li> -->
+                        {% assign links = site.data.navigation %}
+                        {% for link in links %}
+                            <li class="nav-item {% if page.url == link.url %}active{% endif %}">
+                                <a class="nav-link" href="{{ link.url }}">{{link.title}}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="modal-footer border-0 gap-3" style="padding: 2rem; padding-top: 0.75rem">
+                    <!-- <button class="btn btn-default btn-no-fill">
+          Log In
+        </button> -->
+                    <button class="btn button-secondary">Let’s talk!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo">
+        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+            <!-- <li class="nav-item {{ if home == page.url }}active{{ endif }}">
+                <a class="nav-link" href="{{ home }}">Homex</a>
+            </li>
+            <li class="nav-item {{ if about == page.url }}active{{ endif }}">
+                <a class="nav-link" href="about.html">{{page.url}}</a>
+            </li>
+            <li class="nav-item {{ if portfolio == page.url }}active{{ endif }}">
+                <a class="nav-link" href="{{ portfolio }}">Portfolio</a>
+            </li>
+            <li class="nav-item {{ if blog == page.url }}active{{ endif }}">
+                <a class="nav-link" href="{{ blog }}">Blog</a>
+            </li> -->
+            {% assign links = site.data.navigation %}
+            {% for link in links %}
+                <li class="nav-item {% if page.url == link.url %}active{% endif %}">
+                    <a class="nav-link" href="{{ link.url }}">{{link.title}}</a>
+                </li>
+            {% endfor %}
+        </ul>
+        <div class="gap-3">
+            <!-- <button class="btn btn-default btn-no-fill">
+      Log In
+    </button> -->
+            <button class="btn button-secondary">Let’s talk!</button>
+        </div>
+    </div>
+</nav>
+
+</div>
+</section>

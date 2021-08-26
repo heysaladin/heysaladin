@@ -1,0 +1,15 @@
+- title: Home
+  url: /
+- title: About
+  url: /about.html
+- title: Portfolio
+  url: /portfolio.html
+- title: Services
+  url: /services.html
+- title: Blog
+  url: /blog.html
+  sublinks:
+    - title: Resume
+      url: /Resume.html
+    - title: Story
+      url: /story.html
