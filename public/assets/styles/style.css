@@ -1,8 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap");
 
 html,
 body {
   font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .button-primary {
@@ -402,6 +406,7 @@ body {
 }
 
 #hero-image img {
+  height: max-content !important;
   width: 125%;
   margin: -8% -10% 0 0;
 }
@@ -555,7 +560,14 @@ body {
   }
 
   .header-2-1 .left-column {
-    margin-bottom: 3rem;
+    /* margin-bottom: 3rem; */
+    margin-bottom: 10rem;
+  }
+  #image-flow {
+    margin-bottom: 5rem;
+  }
+  #image-about {
+    margin-bottom: 0rem;
   }
 }
 
@@ -804,7 +816,8 @@ body {
 }
 
 .content-2-1 .card-action {
-  padding: 24px 0 0 72px;
+  /* padding: 24px 0 0 72px; */
+  padding: 24px 64px;
   background: #246bfd url("./images/bg-mask.png") no-repeat center center;
   background-size: cover;
   border-radius: 36px;
@@ -931,7 +944,7 @@ body {
 
 #section-flow {
   margin: 50px auto;
-  background: #f7f7f9;
+  background: #f8f9fd;
   padding: 6.5rem 5rem 4rem;
 }
 
@@ -1049,4 +1062,84 @@ body {
     order: 1;
   }
   /* HEADER end */
+}
+
+/* @media (max-width: 768px) {
+
+  .carousel-item > img,
+  .carousel-item > span {
+    display: none;
+  }
+
+} */
+
+@media (max-width: 1200px) {
+  #section-testimony {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  #hero-image img {
+    margin: 0 0 3rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  #targetModal-item {
+    /* width: 74%; */
+  }
+  .nav-item.active::after {
+    bottom: -0.15em;
+    left: 0.75em;
+    text-align: left;
+  }
+  .modal-footer {
+    justify-content: flex-start !important;
+  }
+  .navbar-nav {
+    padding: 1.75rem 0 1.25rem;
+  }
+  #hero-image img {
+    margin: 0 0 3rem 0;
+  }
+  #hero-text h1 {
+    font-size: 2.35rem;
+  }
+
+  .video-link {
+    margin-left: 0px;
+    margin-top: 16px;
+  }
+
+  #section-i-do .section-title {
+    padding: 0rem 2.5rem 0rem;
+  }
+
+  #section-flow {
+    padding: 6.5rem 1rem 4rem;
+  }
+
+  #img-fluid-flow {
+    width: 100%;
+  }
+
+  #image-flow {
+    margin: 0 0 3rem;
+  }
+
+  #img-fluid-about {
+    width: 100%;
+    position: relative;
+    margin: 0 0 8rem 1rem;
+  }
+
+  #text-about p strong {
+    font-size: 21px;
+    line-height: 32px;
+  }
+
+  .content-text-right {
+    padding: 0;
+  }
 }

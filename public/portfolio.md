@@ -10,7 +10,8 @@ title: "Portfolio"
                 <div class="left-column d-flex flex-lg-grow-1 flex-column align-items-lg-start text-lg-start align-items-center text-center"
                     id="hero-text">
                     <h1 class="">
-                        Portfolio
+                        <!-- Portfolio -->
+                        Under development
                     </h1>
                 </div>
             </div>
