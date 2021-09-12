@@ -30,10 +30,10 @@ layout: home
                     </p>
                     <div
                         class="d-flex flex-sm-row flex-column align-items-center mx-lg-0 mx-auto justify-content-center gap-3">
-                        <button class="btn d-inline-flex mb-md-0 button-primary">
+                        <button class="btn d-inline-flex mb-md-0 button-primary" onclick="location.href='#section-i-do'">
                             Explore more
                         </button>
-                        <button class="btn">
+                        <button class="btn" onclick="location.href='https://www.youtube.com/channel/UCZCn1GEIS1sPVerIkDSwxBA/about'">
                             <div class="d-flex align-items-center video-link">
                                 <span class="icon" id="icon-play"></span><span>Watch Video</span>
                             </div>
@@ -43,7 +43,8 @@ layout: home
                 <!-- Right Column -->
                 <div class="right-column text-center d-flex justify-content-center pe-0" id="hero-image">
                     <img id="img-fluid" class="h-auto" src="./assets/styles/images/hero-image.png" alt="HeySaladin"
-                        width="636" height="695.5" />
+                         />
+                         <!-- width="636" height="695.5" -->
                 </div>
             </div>
         </div>
@@ -110,8 +111,9 @@ layout: home
                 <div class="mx-auto d-flex flex-lg-row flex-column column-text-right flow">
                     <!-- Right Column -->
                     <div class="right-column text-center d-flex justify-content-center pe-0" id="image-flow">
-                        <img id="img-fluid" class="h-auto" src="./assets/styles/images/figure-flow.png" alt="HeySaladin"
-                            width="636" height="695.5" />
+                        <img id="img-fluid-flow" class="h-auto" src="./assets/styles/images/figure-flow-v2.png" alt="HeySaladin"
+                         />
+                         <!-- width="636" height="695.5" -->
                     </div>
                     <!-- Left Column -->
                     <div class="left-column d-flex flex-lg-grow-1 flex-column align-items-lg-start text-lg-start align-items-center text-center content-text-right"
@@ -130,10 +132,10 @@ layout: home
                             was able to
                             solve the problem.
                         </p>
-                        <p><strong>Discover, Define, Ideate, Prototype, Validate</strong></p>
+                        <p><strong>Outcome  ->  Problem  ->  Solution</strong></p>
                         <div
                             class="d-flex flex-sm-row flex-column align-items-center mx-lg-0 mx-auto justify-content-center gap-3">
-                            <button class="btn d-inline-flex mb-md-0 button-ghost">
+                            <button class="btn d-inline-flex mb-md-0 button-ghost" onclick="location.href='https://heyheysaladin.web.app/'">
                                 <span>More about services</span><span class="arrow-button"></span>
                             </button>
                         </div>
@@ -157,9 +159,9 @@ layout: home
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="card" style="width: 100%">
                         <img src="https://cdn.dribbble.com/users/1863357/screenshots/14435699/media/d473237887c6d99b8f54fd93cf202a2c.jpg?compress=1&resize=1200x900"
-                            class="card-img-top" alt="..." />
+                            class="card-img-top" alt="Deli Food: Food delivery app" />
                         <div class="card-body">
-                            <h5 class="card-title">Deli Food: Food delivery app </h5>
+                            <h5 class="card-title">Deli Food: Food delivery app</h5>
                             <p class="card-text">
                                 App courier & delivery services
                             </p>
@@ -170,11 +172,11 @@ layout: home
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="card" style="width: 100%">
                         <img src="https://cdn.dribbble.com/users/1863357/screenshots/12892477/media/6ce4d0588cff057e97fe753479c419b9.png?compress=1&resize=1200x900"
-                            class="card-img-top" alt="..." />
+                            class="card-img-top" alt="Fintech App: Integrated online funding" />
                         <div class="card-body">
-                            <h5 class="card-title">Deli Food: Food delivery app </h5>
+                            <h5 class="card-title">Fintech App: Online funding</h5>
                             <p class="card-text">
-                                App courier & delivery services
+                                App fintech services
                             </p>
                         </div>
                     </div>
@@ -185,9 +187,9 @@ layout: home
                         <img src="https://cdn.dribbble.com/users/1863357/screenshots/12891993/media/eb5de81653197d0fecee0cfa879f7cca.png?compress=1&resize=1200x900"
                             class="card-img-top" alt="..." />
                         <div class="card-body">
-                            <h5 class="card-title">Deli Food: Food delivery app </h5>
+                            <h5 class="card-title">Tresnan: Cultural dating app</h5>
                             <p class="card-text">
-                                App courier & delivery services
+                                App for date based on cultural values
                             </p>
                         </div>
                     </div>
@@ -198,9 +200,9 @@ layout: home
                         <img src="https://cdn.dribbble.com/users/1863357/screenshots/12891433/media/dbbd5a4caaa74bbc382f06c376d02686.jpg?compress=1&resize=1200x900"
                             class="card-img-top" alt="..." />
                         <div class="card-body">
-                            <h5 class="card-title">Deli Food: Food delivery app </h5>
+                            <h5 class="card-title">Itacov App: Pandemic solution</h5>
                             <p class="card-text">
-                                App courier & delivery services
+                                App for pandemic solution
                             </p>
                         </div>
                     </div>
@@ -210,7 +212,7 @@ layout: home
 
             <div class="d-flex flex-sm-row flex-column align-items-center mx-lg-0 mx-auto justify-content-center gap-3"
                 id="works-action">
-                <button class="btn d-inline-flex mb-md-0 button-ghost">
+                <button class="btn d-inline-flex mb-md-0 button-ghost" onclick="location.href='https://farooq-agent.web.app/works-gallery/'">
                     <span>Explore more works</span><span class="arrow-button"></span>
                 </button>
             </div>
@@ -228,8 +230,9 @@ layout: home
                 <div class="mx-auto d-flex flex-lg-row flex-column column-text-right">
                     <!-- Right Column -->
                     <div class="right-column text-center d-flex justify-content-center pe-0" id="image-about">
-                        <img id="img-fluid" class="h-auto" src="./assets/styles/images/figure.png" alt="HeySaladin"
-                            width="636" height="695.5" />
+                        <img id="img-fluid-about" class="h-auto" src="./assets/styles/images/figure.png" alt="HeySaladin"
+                         />
+                         <!-- width="636" height="695.5" -->
                     </div>
                     <!-- Left Column -->
                     <div class="left-column d-flex flex-lg-grow-1 flex-column align-items-lg-start text-lg-start align-items-center text-center content-text-right"
@@ -248,7 +251,7 @@ layout: home
                         </p>
                         <div
                             class="d-flex flex-sm-row flex-column align-items-center mx-lg-0 mx-auto justify-content-center gap-3 row-action">
-                            <button class="btn d-inline-flex mb-md-0 button-ghost">
+                            <button class="btn d-inline-flex mb-md-0 button-ghost" onclick="location.href='https://heyheysaladin.web.app/'">
                                 <span>More about me</span><span class="arrow-button"></span>
                             </button>
                         </div>
@@ -428,7 +431,7 @@ layout: home
                         <h3 class="card-title">
                             Have any project in mind?
                         </h3>
-                        <button class="btn btn-card">Let’s talk!</button>
+                        <button class="btn btn-card" onclick="location.href='./contact.html'">Let’s talk!</button>
                         <!-- <p class="card-caption">
                 Our tools for business analysis helps an organization
                 understand<br class="d-none d-lg-block" />
@@ -436,7 +439,7 @@ layout: home
               </p> -->
                     </div>
                     <!-- <div class="card-btn-space">
-              <button class="btn btn-card text-white">Let’s talk!</button>
+              <button class="btn btn-card text-white" onclick="location.href='./contact.html'">Let’s talk!</button>
               <button class="btn btn-outline">Demo Version</button>
             </div> -->
                     <div class="me-lg-3">
