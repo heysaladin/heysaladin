@@ -1086,9 +1086,9 @@ html {
 }
 
 @media (max-width: 480px) {
-  #targetModal-item {
-    /* width: 74%; */
-  }
+  /* #targetModal-item {
+    width: 74%;
+  } */
   .nav-item.active::after {
     bottom: -0.15em;
     left: 0.75em;
