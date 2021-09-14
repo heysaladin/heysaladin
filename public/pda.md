@@ -9,7 +9,7 @@ title: "PDA"
                 <div class="left-column d-flex flex-lg-grow-1 flex-column align-items-lg-start text-lg-start align-items-center text-center"
                     id="hero-text">
                     <h1 class="">
-                        PDA (Product Design Academy)
+                        PDA
                     </h1>
                 </div>
             </div>
