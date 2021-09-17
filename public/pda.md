@@ -9,8 +9,7 @@ title: "PDA"
                 <div class="left-column d-flex flex-lg-grow-1 flex-column align-items-lg-start text-lg-start align-items-center text-center"
                     id="hero-text">
                     <h1 class="">
-                        PDA
-                        page
+                        One of the best ways to learn product design is to immerse myself in a real world & mature industry
                     </h1>
                 </div>
             </div>
