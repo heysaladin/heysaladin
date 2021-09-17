@@ -11,6 +11,9 @@ title: "PDA"
                     <h1 class="">
                         One of the best ways to learn product design is to immerse myself in a real world & mature industry
                     </h1>
+                    <p class="">
+                        and PDA help me get it
+                    </p>
                 </div>
             </div>
         </div>
