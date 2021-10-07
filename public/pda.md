@@ -12,7 +12,7 @@ title: "PDA"
                         One of the best ways to learn product design is to immerse myself in a real world & mature industry
                     </h1>
                     <p class="secondary-text">
-                        and PDA has helped me achieve it
+                        and PDA has helped me achieve it!
                     </p>
                 </div>
             </div>
