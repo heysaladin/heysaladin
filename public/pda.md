@@ -8,11 +8,27 @@ title: "PDA"
             <div class="mx-auto d-flex flex-lg-row flex-column hero">
                 <div class="left-column d-flex flex-lg-grow-1 flex-column align-items-lg-start text-lg-start align-items-center text-center"
                     id="hero-text">
-                    <h1 class="display-text">
-                        One of the best ways to learn product design is to immerse myself in a real world & mature industry
+                    <h1 style="font-family: Poppins;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 48px;
+                        line-height: 150%;
+                        text-align: center;
+                        color: #303030;
+                        margin: 0 14.5em;
+                        "
+                    class="display-text">
+                        One of the best ways to learn <span style="color: #3CAF41;">product design</span> is to immerse myself in a real world & mature industry
                     </h1>
-                    <p class="secondary-text">
-                        ...and PDA has helped me achieve it!
+                    <p style="font-family: Poppins;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 150%;
+                        text-align: center;
+                        color: #303030;"
+                    class="secondary-text">
+                        and PDA has helped me achieve it!
                     </p>
                 </div>
             </div>
