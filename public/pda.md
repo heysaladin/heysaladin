@@ -15,7 +15,7 @@ title: "PDA"
                         line-height: 150%;
                         text-align: center;
                         color: #303030;
-                        margin: 0 14.5em;
+                        margin: 0 15%;
                         "
                     class="display-text">
                         One of the best ways to learn <span style="color: #3CAF41;">product design</span> is to immerse myself in a real world & mature industry
@@ -48,7 +48,7 @@ title: "PDA"
                         line-height: 150%;
                         text-align: center;
                         color: #303030;
-                        margin: 0 14.5em;
+                        margin: 0 15%;
                         "
                     class="display-text">
                         What top people are saying
