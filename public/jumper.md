@@ -12,7 +12,7 @@ html {
 body {
   margin: 0 auto;
   min-width: 360px;
-  max-width: 640px;
+  max-width: 360px;
   font-size: 28px;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -70,7 +70,7 @@ body {
   top: 0;
   width: 100%;
   min-width: 360px;
-  max-width: 640px;
+  max-width: 360px;
 }
 
 .sticky + .content {
@@ -151,9 +151,43 @@ position: fixed;
 #navbar a:nth-child(1) .icon-nav {
     background: url(./assets/styles/images/jumper/icon-1.png) no-repeat center center;
 }
-
 #navbar a:nth-child(1).active .icon-nav {
     background: url(./assets/styles/images/jumper/icon-1-a.png) no-repeat center center;
+}
+
+#navbar a:nth-child(2) .icon-nav {
+    background: url(./assets/styles/images/jumper/icon-2.png) no-repeat center center;
+}
+#navbar a:nth-child(2).active .icon-nav {
+    background: url(./assets/styles/images/jumper/icon-2-a.png) no-repeat center center;
+}
+
+#navbar a:nth-child(3) .icon-nav {
+    background: url(./assets/styles/images/jumper/icon-3.png) no-repeat center center;
+}
+#navbar a:nth-child(3).active .icon-nav {
+    background: url(./assets/styles/images/jumper/icon-3-a.png) no-repeat center center;
+}
+
+#navbar a:nth-child(4) .icon-nav {
+    background: url(./assets/styles/images/jumper/icon-4.png) no-repeat center center;
+}
+#navbar a:nth-child(4).active .icon-nav {
+    background: url(./assets/styles/images/jumper/icon-4-a.png) no-repeat center center;
+}
+
+#navbar a:nth-child(5) .icon-nav {
+    background: url(./assets/styles/images/jumper/icon-5.png) no-repeat center center;
+}
+#navbar a:nth-child(5).active .icon-nav {
+    background: url(./assets/styles/images/jumper/icon-5-a.png) no-repeat center center;
+}
+
+#navbar a:nth-child(6) .icon-nav {
+    background: url(./assets/styles/images/jumper/icon-6.png) no-repeat center center;
+}
+#navbar a:nth-child(6).active .icon-nav {
+    background: url(./assets/styles/images/jumper/icon-6-a.png) no-repeat center center;
 }
 
 </style>
@@ -175,23 +209,23 @@ position: fixed;
   </a>
   <a class="nav-item" id="anchor-2" href="#section-2">
     <span class="icon-nav"></span>
-    <span class="text-nav">Promo<br/>Terbaik</span>
+    <span class="text-nav">Sesuai<br/>Budget</span>
   </a>
   <a class="nav-item" id="anchor-3" href="#section-3">
     <span class="icon-nav"></span>
-    <span class="text-nav">Promo<br/>Terbaik</span>
+    <span class="text-nav">Flash Sale</span>
   </a>
   <a class="nav-item" id="anchor-4" href="#section-4">
     <span class="icon-nav"></span>
-    <span class="text-nav">Promo<br/>Terbaik</span>
+    <span class="text-nav">Rilisan<br/>Spesial!</span>
   </a>
   <a class="nav-item" id="anchor-5" href="#section-5">
     <span class="icon-nav"></span>
-    <span class="text-nav">Promo<br/>Terbaik</span>
+    <span class="text-nav">Toko Pilihan</span>
   </a>
   <a class="nav-item" id="anchor-6" href="#section-6">
     <span class="icon-nav"></span>
-    <span class="text-nav">Promo<br/>Terbaik</span>
+    <span class="text-nav">Semua<br/>Event</span>
   </a>
 </div>
 
@@ -354,40 +388,40 @@ for (var i = 0; i < btns.length; i++) {
 Using jquery waypoints to change active on scroll
 */
 
-$('#section-2').waypoint(function() {
-  $("#navbar").children().removeClass("active");
-  $("#anchor-2").addClass("active");
-}, { offset: 1460 });
+// $('#section-2').waypoint(function() {
+//   $("#navbar").children().removeClass("active");
+//   $("#anchor-2").addClass("active");
+// }, { offset: 1460 });
 
 
-$('#section-3').waypoint(function() {
-  $("#navbar").children().removeClass("active");
-  $("#anchor-3").addClass("active");
-}, { offset: 2324 });
+// $('#section-3').waypoint(function() {
+//   $("#navbar").children().removeClass("active");
+//   $("#anchor-3").addClass("active");
+// }, { offset: 2324 });
 
 
-$('#section-4').waypoint(function() {
-  $("#navbar").children().removeClass("active");
-  $("#anchor-4").addClass("active");
-}, { offset: 3588 });
+// $('#section-4').waypoint(function() {
+//   $("#navbar").children().removeClass("active");
+//   $("#anchor-4").addClass("active");
+// }, { offset: 3588 });
 
 
-$('#section-5').waypoint(function() {
-  $("#navbar").children().removeClass("active");
-  $("#anchor-5").addClass("active");
-}, { offset: 4308 });
+// $('#section-5').waypoint(function() {
+//   $("#navbar").children().removeClass("active");
+//   $("#anchor-5").addClass("active");
+// }, { offset: 4308 });
 
 
-$('#section-6').waypoint(function() {
-  $("#navbar").children().removeClass("active");
-  $("#anchor-6").addClass("active");
-}, { offset: 5700 });
+// $('#section-6').waypoint(function() {
+//   $("#navbar").children().removeClass("active");
+//   $("#anchor-6").addClass("active");
+// }, { offset: 5700 });
 
 
-$('#section-1').waypoint(function() {
-  $("#navbar").children().removeClass("active");
-  $("#anchor-1").addClass("active");
-}, { offset: 100 });
+// $('#section-1').waypoint(function() {
+//   $("#navbar").children().removeClass("active");
+//   $("#anchor-1").addClass("active");
+// }, { offset: 100 });
 
 // $('#anchor-4').waypoint(function() {
 //   $("#navbar a").children().removeClass("active");
