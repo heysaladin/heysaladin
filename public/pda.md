@@ -51,7 +51,7 @@ title: "PDA"
                         margin: 0 15%;
                         "
                     class="display-text">
-                        What top people are <strong>saying...</strong>
+                        What top people are <strong>saying ...</strong>
                     </h1>
                 </div>
             </div>
