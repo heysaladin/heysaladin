@@ -212,7 +212,8 @@ layout: home
 
             <div class="d-flex flex-sm-row flex-column align-items-center mx-lg-0 mx-auto justify-content-center gap-3"
                 id="works-action">
-                <button class="btn d-inline-flex mb-md-0 button-ghost" onclick="location.href='https://farooq-agent.web.app/works-gallery/'">
+                <!-- https://farooq-agent.web.app/works-gallery/ -->
+                <button class="btn d-inline-flex mb-md-0 button-ghost" onclick="location.href='https://app.hyperfantasystudio.com/heysaladin'">
                     <span>Explore more works</span><span class="arrow-button"></span>
                 </button>
             </div>
